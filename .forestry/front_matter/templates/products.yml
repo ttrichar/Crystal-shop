@@ -32,6 +32,7 @@ fields:
     maxSize: 64
   label: Image
 pages:
+- src/products/Blue_Tigers_Eye.md
 - src/products/Honeycomb_Calcite.md
 - src/products/Orange_Selenite.md
 - src/products/Selenite.md
