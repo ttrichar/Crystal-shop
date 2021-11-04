@@ -32,5 +32,6 @@ fields:
     maxSize: 64
   label: Image
 pages:
+- src/products/Honeycomb_Calcite.md
 - src/products/Orange_Selenite.md
 - src/products/Selenite.md
