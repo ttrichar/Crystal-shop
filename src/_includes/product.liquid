@@ -1,0 +1,25 @@
+---
+title: {{ name }}
+layout: main.liquid
+---
+
+<div id="product-view">
+  <img alt="" src="{{ image }}" height="959" width="640" />
+
+  <form class="body">
+    <h1>{{ name }}</h1>
+
+    <p class="price">{{ price | money }}</p>
+
+    <p>{{ description }}</p>
+
+    <div>
+      <jamcart-add
+        include-form-data
+        image="{{ image }}"
+        name="{{ name }}"
+        price="{{ price }}"
+        url="{{ page.url }}"></jamcart-add>
+    </div>
+  </form>
+</div>

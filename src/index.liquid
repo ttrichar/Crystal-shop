@@ -1,0 +1,21 @@
+---
+title: Redwood Crystals 
+description: Crystals!!!!
+layout: main.liquid
+---
+
+<h1 id="category-title">Products</h1>
+
+<ul id="products">
+  {% for product in collections.product %}
+    <li>
+      <a href="{{ product.url }}">
+        <img alt="" src="{{ product.data.image }}" />
+
+        {{ product.data.name }}
+      </a>
+
+      <p class="price">{{ product.data.price | money }}</p>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="description" content="{{ description }}" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+<script type="module" data-currency="USD" data-id="4D71FB-J377DG" src="https://api.jamcart.io/v1/jamcart.js"></script>  </head>
+
+  <body>
+    <header>
+      <p id="site-logo">
+        <a href="/">LowCodeUnit Acme Shop</a>
+      </p>
+
+      <jamcart-open>
+        My Cart (<jamcart-cart-count></jamcart-cart-count>)
+      </jamcart-open>
+    </header>
+
+    {{ content | safe }}
+  </body>
+</html>
