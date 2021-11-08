@@ -1,6 +1,6 @@
 {
   "name": "@powhound4/fathym-crystal-shop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
