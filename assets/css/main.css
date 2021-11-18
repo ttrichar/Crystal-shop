@@ -1,8 +1,6 @@
 @import url(./front-page.css);
-:root {
-  --main-dark: #a05841;
-  --main-light: #ededee;
-}
+@import url(./theme.css);
+
 
 header {
     align-items: center;
@@ -109,7 +107,7 @@ header {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #252525;
+    background-color: var(--main-light);
   }
   #site-logo{
     font-family: sans-serif;
@@ -201,6 +199,22 @@ header {
     font: inherit;
     font-weight: normal;
   }
+
+  .footer-container{
+    padding:30px;
+    color: var(--main-light);
+    background-color: #123132;
+  }
+
+  .footer-main-content{
+    display: flex;
+    text-align: center;
+  }
+
+  .footer-box{
+    width:33%;
+  }
+
   @media (min-width: 40em) {
     #product-view {
       display: flex;
