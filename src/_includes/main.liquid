@@ -16,13 +16,45 @@
 
   <body>
     <header>
-      <p id="site-logo">
-        <a href="/">Lowcodeunit Crystal Shop</a>
-      </p>
+      <img src="/uploads/redwood-crystal-gold-no-text.png" alt="Redwood Crystals" width="150" height="127">
 
-      <jamcart-open>
-        My Cart (<jamcart-cart-count></jamcart-cart-count>)
-      </jamcart-open>
+      <div class="toolbar-container">
+
+        <div class="social-media-toolbar">
+          <p class="media-item">Instagram</p>
+          <p class="media-item">Facebook</p>
+          <jamcart-open class="media-item">
+            My Cart (<jamcart-cart-count></jamcart-cart-count>)
+          </jamcart-open>
+        </div>
+
+        <div class='main-toolbar'>
+          <p id="site-logo">
+            <a href="/">Redwood Crystals</a>
+          </p>
+
+          <div class="header-links">
+
+          
+            <div class="dropdown">
+              <button class="dropbtn">SHOP</button>
+              <div class="dropdown-content">
+                <a href="/all-products">Entire Collection</a>
+                <a href="#">Crystals Under $10</a>
+                <a href="#">Selenite Collection</a>
+                <a href="#">Kits & Bowls</a>
+                <a href="#">Limited Edition</a>
+
+
+              </div>
+            </div> 
+            <button class="toolbar-button">FAQ</button>
+            <button class="toolbar-button">CONTACT</button>   
+          </div>
+
+          
+        </div>
+      </div>
     </header>
 
     {{ content | safe }}

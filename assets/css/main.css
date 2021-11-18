@@ -1,13 +1,110 @@
+@import url(./front-page.css);
+:root {
+  --main-dark: #a05841;
+  --main-light: #ededee;
+}
+
 header {
     align-items: center;
-    background: cadetblue;
-    color: white;
+    background-color: var(--main-light);
     display: flex;
     justify-content: space-between;
     padding: 1em 2em;
     z-index: 10;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    position: sticky;
+    top: 0px;
   }
+
+  .toolbar-container{
+    width: 100%;
+  }
+
+  .social-media-toolbar{
+    display:flex;
+    justify-content: right;
+    width: 100%;
+    align-items: center;
+    background-color: var(--main-dark);
+  }
+
+  .media-item{
+    margin-right: 20px;
+    cursor:pointer;
+    color:var(--main-light);
+  }
+
+  .main-toolbar{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-light);
+  }
+
+  .header-links {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding: 1em 2em;
+    z-index: 10;
+    width: 60%;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  color: var(--main-dark);
+  background: none;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--main-dark);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: var(--main-light);
+  background-color: var(--main-dark);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {}
+
+.toolbar-button{
+  color: var(--main-dark);
+  margin-left: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
   body {
     font-family: sans-serif;
     margin: 0;
@@ -21,7 +118,13 @@ header {
   }
   #site-logo a{
     text-decoration: none;
-    color: white;
+    color: var(--main-dark);
+  }
+
+  .sticky-img{
+    position: sticky;
+    top:0px;
+    
   }
   .price {
     font-family: sans-serif;

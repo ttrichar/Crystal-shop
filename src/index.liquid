@@ -1,21 +1,14 @@
 ---
-title: Lowcodeunit Crystal Shop
-description: Crystals!!!!
+title: Redwood Crystals
 layout: main.liquid
 ---
 
-<h1 id="category-title">Products</h1>
+      <div class="welcome-container">
+        <div class="established-container">
+          <p class="est-text">Est.</p>
+          <img class="est-img" src="/uploads/redwood-crystal-gold-no-text.png" alt="Redwood Crystals" width="20" height="17">
+          <p class="est-text">2021</p>
+        </div>
+      
+      </div>
 
-<ul id="products">
-  {% for product in collections.product %}
-    <li>
-      <a href="{{ product.url }}">
-        <img alt="" src="{{ product.data.image }}" />
-
-        {{ product.data.name }}
-      </a>
-
-      <p class="price">{{ product.data.price | money }}</p>
-    </li>
-  {% endfor %}
-</ul>
