@@ -1,11 +1,17 @@
 ---
-title: All Products
+layout: main.liquid
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /collections/{{ tag }}/
 ---
 
-<h1 id="category-title">{{title}}</h1>
+<h1 id="category-title">{{tag | capitalize }} Collection</h1>
 
 <ul id="products">
-  {% for product in collections.product %}
+  {% for product in collections[tag] %}
+    {% if product.data.name %}
     <li>
       <a href="{{ product.url }}">
         <img alt="" src="{{ product.data.image }}" />
@@ -15,5 +21,6 @@ title: All Products
 
       <p class="price">{{ product.data.price | money }}</p>
     </li>
+    {% endif %}
   {% endfor %}
 </ul>
