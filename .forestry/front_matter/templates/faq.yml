@@ -18,3 +18,4 @@ fields:
   label: Answer
 pages:
 - src/faq/faq-1.md
+- src/faq/faq-2.md
