@@ -7,5 +7,8 @@ tags:
 - selenite
 - under10
 - cleansing
+album:
+- "/uploads/orangeselenite.jpeg"
+- "/uploads/selenite.jpeg"
 
 ---
