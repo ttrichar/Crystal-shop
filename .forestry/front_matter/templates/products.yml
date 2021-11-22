@@ -35,6 +35,10 @@ fields:
   type: tag_list
   default: []
   label: Tags
+- name: album
+  type: image_gallery
+  config: {}
+  label: Album
 pages:
 - src/products/Blue_Tigers_Eye.md
 - src/products/Honeycomb_Calcite.md
