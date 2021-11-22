@@ -16,3 +16,5 @@ fields:
     schema:
       format: markdown
   label: Answer
+pages:
+- src/faq/faq-1.md
