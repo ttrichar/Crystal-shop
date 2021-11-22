@@ -1,0 +1,36 @@
+.image-carousel{
+    display: flex;
+    align-items: center;
+}
+
+.caret-button{
+    background-color: lightgrey;
+    border-radius: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sjs-carousel-button-prev,
+.sjs-carousel-button-next{
+    cursor: pointer;
+}
+
+.sjs-carousel-item.prev,
+.sjs-carousel-item.next {
+  display: none;
+}
+
+/* Move item left */
+.sjs-carousel-item.prev {
+    transform: translateX(-100%); 
+  }
+  
+  /* Move item right */
+  .sjs-carousel-item.next {
+    transform: translateX(100%);
+  }
+
+  

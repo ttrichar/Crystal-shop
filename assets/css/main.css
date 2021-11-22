@@ -1,5 +1,6 @@
 @import url(./front-page.css);
 @import url(./theme.css);
+@import url(./carousel.css);
 
 
 header {
@@ -102,6 +103,7 @@ header {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  text-decoration: none;
 }
   body {
     font-family: sans-serif;
@@ -164,12 +166,12 @@ header {
     max-width: 100%;
   }
   #category-title  {
-    color: white;
+    color: var(--main-dark);
     font-weight: 300;
     padding-left: 25px;
   }
   #product-view {
-    color: white;
+    color: var(--main-dark);
     margin: 3em 1em;
   }
   #product-view h1 {
@@ -215,13 +217,29 @@ header {
     width:33%;
   }
 
+  .address-p{
+    line-height: 30px;
+  }
+
+  .help-link-container{
+    display: grid;
+  }
+
+  .help-link{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--main-light);
+    margin: 5px;
+  }
+
+
+
   @media (min-width: 40em) {
     #product-view {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
     }
     #product-view img {
-      margin-right: 1em;
       max-width: 40vw;
     }
     #product-view .body {

@@ -4,7 +4,56 @@ layout: main.liquid
 ---
 
 <div id="product-view">
-  <img alt="" src="{{ image }}" height="959" width="640" />
+  
+
+    
+<div class="product-display-container">
+
+    <div class="image-carousel">
+
+        <div class="sjs-carousel-button-prev caret-button">
+          <span class=" chevron material-icons" id="chevron-left">chevron_left</span>
+        </div>
+
+        
+      {% for image in album %}
+        <div class="sjs-carousel-item">
+
+          <img alt="" src="{{ image }}" height="959" width="640" />
+
+        </div>
+      {% endfor %}
+
+      <div class="sjs-carousel-button-next caret-button">
+          <span class="chevron material-icons" id="chevron-right">chevron_right</span>
+        </div>
+
+    </div> 
+
+
+      <div class="thumbnail-display">
+        {% for image in album %}
+          <img alt="" src="{{ image }}" id="{{image.index}}" height="100" width="66" />
+        {% endfor %}
+      </div>
+
+  </div>
+    
+
+  
+      
+
+    <!--<img alt="" src="{{ album[0] }}" height="959" width="640" />-->
+
+  
+
+    
+
+  
+
+  
+  
+  
 
   <form class="body">
     <h1>{{ name }}</h1>
@@ -23,3 +72,16 @@ layout: main.liquid
     </div>
   </form>
 </div>
+
+<script id="sjs-carousel" defer type="module">
+    import { Carousel, LazySource } from '../../packages/es/index.js';
+
+    const imgCarousel = new Carousel();
+
+    imgCarousel.Mount('.image-carousel');
+
+    const lazySrcs = new LazySource();
+
+    lazySrcs.Mount('[data-src]');
+
+</script>

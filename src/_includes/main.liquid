@@ -12,7 +12,10 @@
 
     <link rel="stylesheet" href="/assets/css/main.css" />
 
-    <script type="module" data-currency="USD" data-id="4D71FB-J377DG" src="https://api.jamcart.io/v1/jamcart.js"></script>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="module" data-currency="USD" data-id="4D71FB-J377DG" src="https://api.jamcart.io/v1/jamcart.js"></script>
+
 </head>
 
   <body>
@@ -49,8 +52,11 @@
 
               </div>
             </div> 
-            <button class="toolbar-button">FAQ</button>
-            <button class="toolbar-button">CONTACT</button>   
+
+            
+            <a class="toolbar-button" href="/FAQ">FAQ</a>
+
+            <a class="toolbar-button">CONTACT</a>  
           </div>
 
           
@@ -64,7 +70,7 @@
     <div class="footer-main-content">
       <div class="footer-box" id="footer-store">
         <h2>OUR STORE</h2>
-        <p>Address: The Be Free Healing Center 1006 Spring Creek Ln b12, Fort Collins, CO 80526
+        <p class="address-p">Address: The Be Free Healing Center 1006 Spring Creek Ln b12, Fort Collins, CO 80526
           Phone: 970-691-7201
           Email:  redwoodcrystals@gmail.com
         </p>
@@ -78,9 +84,11 @@
       </div>
       <div class="footer-box" id="footer-links">
         <h2>HELP</h2>
-        <a>Shipping & Returns</a>
-        <a>FAQ</a>
-        <a>Privacy Policy</a>
+        <div class="help-link-container">
+          <a class="help-link" href="/Shipping-and-Returns">Shipping & Returns</a>
+          <a class="help-link" href="/FAQ">FAQ</a>
+          <a class="help-link" href="/Privacy-policy">Privacy Policy</a>
+        </div>
       </div>
     </div>
     </footer>
