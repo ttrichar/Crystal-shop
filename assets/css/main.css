@@ -1,6 +1,7 @@
 @import url(./front-page.css);
 @import url(./theme.css);
 @import url(./carousel.css);
+@import url(./faq.css);
 
 
 header {
@@ -206,6 +207,7 @@ header {
     padding:30px;
     color: var(--main-light);
     background-color: #123132;
+    
   }
 
   .footer-main-content{

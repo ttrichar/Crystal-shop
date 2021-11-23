@@ -50,7 +50,7 @@ class Carousel {
     }
     SetSlide(slide) {
         var _a;
-        console.log("set slide: ", slide);
+        console.log("set slide: ", this.items);
         if (slide instanceof HTMLElement) {
             slide = (_a = this.items) === null || _a === void 0 ? void 0 : _a.indexOf(slide);
         }

@@ -2,5 +2,29 @@
 <h2 class="faq-title">FAQ</h2>
 
 <div class="faq-content">
+{% for faq in collections.faq %}
+<button type="button" class="collapsible">{{faq.data.question}}</button>
+<div class="content">
+  <p>{{faq.data.answer}}</p>
+</div>
+
+{% endfor %}
 
 </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
