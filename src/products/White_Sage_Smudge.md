@@ -8,5 +8,7 @@ tags:
 - cleansing
 - sage
 - under10
+album:
+- "/uploads/whitesage.jpeg"
 
 ---
