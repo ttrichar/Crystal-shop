@@ -10,5 +10,7 @@ tags:
 - cleansing
 - love
 - relaxing
+album:
+- "/uploads/lavender.jpeg"
 
 ---
