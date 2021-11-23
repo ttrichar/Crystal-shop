@@ -8,5 +8,7 @@ tags:
 - under10
 - grounding
 - cleansing
+album:
+- "/uploads/orangeselenite.jpeg"
 
 ---
