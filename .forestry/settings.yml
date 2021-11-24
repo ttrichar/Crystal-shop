@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: Shipping and Returns
+  path: Policies
   label: Policies
   create: all
   match: "**/*.md"
