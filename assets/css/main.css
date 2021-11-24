@@ -3,6 +3,7 @@
 @import url(./carousel.css);
 @import url(./faq.css);
 @import url(./product-page.css);
+@import url(./policy-page.css);
 
 
 header {
@@ -27,6 +28,8 @@ header {
     width: 100%;
     align-items: center;
     background-color: var(--main-dark);
+    height: 45px;
+    border-radius: 5px;
   }
 
   .media-item{

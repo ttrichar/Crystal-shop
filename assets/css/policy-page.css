@@ -1,3 +1,7 @@
-.policy-container{
+.policy-page-container{
     text-align: center;
+}
+.policy-container{
+    margin: 50px;
+    color:var(--main-dark);
 }

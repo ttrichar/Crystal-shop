@@ -1,9 +1,12 @@
-<div class="policy-container">
+<div class="policy-page-container">
 
 {% for policy in collections.ordered-policies %}
+<div class="policy-container">
 
 <h2 class="policy-name">{{ policy.data.name }}</h2>
 <p class="policy-content">{{ policy.data.content }}</p>
+
+</div>
 
 {% endfor %}
 
