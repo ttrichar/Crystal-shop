@@ -16,6 +16,16 @@ fields:
     schema:
       format: markdown
   label: Content
+- name: order
+  type: number
+  label: Order
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 pages:
 - Policies/Payments.md
 - Policies/Retruns.md
