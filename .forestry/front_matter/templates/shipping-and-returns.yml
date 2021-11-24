@@ -17,5 +17,6 @@ fields:
       format: markdown
   label: Content
 pages:
+- Policies/Payments.md
 - Policies/Retruns.md
 - Policies/Shipping.md
