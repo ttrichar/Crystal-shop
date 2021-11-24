@@ -1,5 +1,6 @@
 ---
-title: {{ name }}
+renderData:
+  title: Redwood Crystals "{{ name }}"
 layout: main.liquid
 ---
 
@@ -11,9 +12,11 @@ layout: main.liquid
 
     <div class="image-carousel">
 
+      {% if album.length >= 2 %}
         <div class="sjs-carousel-button-prev caret-button">
           <span class=" chevron material-icons" id="chevron-left">chevron_left</span>
         </div>
+      {% endif %}
 
         
       {% for image in album %}
@@ -24,37 +27,24 @@ layout: main.liquid
         </div>
       {% endfor %}
 
-      <div class="sjs-carousel-button-next caret-button">
-          <span class="chevron material-icons" id="chevron-right">chevron_right</span>
+      {% if album.length >= 2 %}
+        <div class="sjs-carousel-button-next caret-button">
+            <span class="chevron material-icons" id="chevron-right">chevron_right</span>
         </div>
+      {% endif %}
 
     </div> 
 
-
+    {% if album.length >= 2 %}
       <div class="thumbnail-display">
         {% for image in album %}
-          <img alt="" src="{{ image }}" id="{{image.index}}" height="100" width="66" />
+          <img class="thumbnail-img" alt="" src="{{ image }}" id="{{image.index}}" height="100" width="66" />
         {% endfor %}
       </div>
+    {% endif %}
 
   </div>
     
-
-  
-      
-
-    <!--<img alt="" src="{{ album[0] }}" height="959" width="640" />-->
-
-  
-
-    
-
-  
-
-  
-  
-  
-
   <form class="body">
     <h1>{{ name }}</h1>
 
@@ -64,6 +54,7 @@ layout: main.liquid
 
     <div>
       <jamcart-add
+        class="add-to-cart-btn"
         include-form-data
         image="{{ image }}"
         name="{{ name }}"

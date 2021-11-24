@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>{{ title }}</title>
+    <title>{{ title or (renderData and renderData.title)  }}</title>
 
     <meta charset="utf-8" />
 
@@ -25,8 +25,8 @@
       <div class="toolbar-container">
 
         <div class="social-media-toolbar">
-          <p class="media-item">Instagram</p>
-          <p class="media-item">Facebook</p>
+          <a class="media-item">Instagram</a>
+          <a class="media-item" href="https://www.facebook.com/redwoodcrystals" target="_blank">Facebook</a>
           <jamcart-open class="media-item">
             My Cart (<jamcart-cart-count></jamcart-cart-count>)
           </jamcart-open>

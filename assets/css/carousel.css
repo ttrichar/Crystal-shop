@@ -20,8 +20,12 @@
 
 .sjs-carousel-item.prev,
 .sjs-carousel-item.next {
-  display: none;
+    display: none;
 }
+
+.sjs-carousel-item.active {
+    visibility: visible;
+  }
 
 /* Move item left */
 .sjs-carousel-item.prev {
@@ -32,5 +36,15 @@
   .sjs-carousel-item.next {
     transform: translateX(100%);
   }
+
+  .thumbnail-display{
+      display: flex;
+      justify-content: center;
+  }
+
+  .thumbnail-img{
+      margin:5px;
+  }
+
 
   

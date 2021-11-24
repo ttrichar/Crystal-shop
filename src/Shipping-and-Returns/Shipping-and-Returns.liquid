@@ -1,1 +1,10 @@
-<h2>Shipping & Retruns</h2>
+<div class="policy-container">
+
+{% for policy in collections.ordered-policies %}
+
+<h2 class="policy-name">{{ policy.data.name }}</h2>
+<p class="policy-content">{{ policy.data.content }}</p>
+
+{% endfor %}
+
+</div>

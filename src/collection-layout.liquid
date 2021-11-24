@@ -1,10 +1,13 @@
 ---
+renderData:
+  title: Redwood Crystals - "{{ tag }}""
 layout: main.liquid
 pagination:
   data: collections
   size: 1
   alias: tag
 permalink: /collections/{{ tag }}/
+
 ---
 
 <h1 id="category-title">{{tag | capitalize }} Collection</h1>

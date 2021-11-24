@@ -117,9 +117,15 @@ class Carousel {
      * Set carousel classes
      */
     setClasses() {
-        this.items[this.PreviousSlide].classList.add('prev');
-        this.items[this.Slide].classList.add('active');
-        this.items[this.NextSlide].classList.add('next');
+        console.log("items: ", this.items);
+        if (this.items.length >= 2) {
+            this.items[this.PreviousSlide].classList.add('prev');
+            this.items[this.Slide].classList.add('active');
+            this.items[this.NextSlide].classList.add('next');
+        }
+        else {
+            this.items[this.Slide].classList.add('active');
+        }
     }
     /**
      * Click events for navigation buttons
