@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: Shipping and Returns
+  label: Policies
+  create: all
+  match: "**/*.md"
+  templates:
+  - shipping-and-returns
+- type: directory
   path: src/faq
   label: FAQ
   create: all
