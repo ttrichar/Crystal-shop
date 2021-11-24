@@ -1,4 +1,40 @@
 ---
 label: Shipping and Returns
 hide_body: false
-fields: []
+fields:
+- name: shipping_policy
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Shipping Policy
+- name: return_policy
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Return Policy
+- name: payment_methods
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Payment Methods
+- name: wholesale_inquiries
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Wholesale Inquiries
