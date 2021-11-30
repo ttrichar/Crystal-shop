@@ -53,13 +53,17 @@ layout: main.liquid
     <p>{{ description }}</p>
 
     <div>
-      <jamcart-add
-        class="add-to-cart-btn"
-        include-form-data
-        image="{{ image }}"
-        name="{{ name }}"
-        price="{{ price }}"
-        url="{{ page.url }}"></jamcart-add>
+
+    <button class="snipcart-add-item"
+            data-item-id="{{ name }}"
+            data-item-price="{{ price }}"
+            data-item-url="{{ page.url }}"
+            data-item-description="{{ description }}"
+            data-item-image="{{ image }}"
+            data-item-name="{{ name }}">
+            Add to cart
+    </button>
+  
     </div>
   </form>
 </div>

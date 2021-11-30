@@ -74,8 +74,14 @@
     font-weight: normal;
   }
 
-.add-to-cart-btn{
-    background-color: var(--button-color);
+.snipcart-add-item{
+  width: 200px;
+  background-color: var(--button-color);
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: var(--main-dark);
+  cursor: pointer;
 }
 
 @media (min-width: 40em) {

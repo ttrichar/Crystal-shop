@@ -56,6 +56,13 @@ header {
     width: 60%;
   }
 
+  .snipcart-checkout{
+    color: var(--main-light);
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: -5px;
+  }
+
   /* Dropdown Button */
 .dropbtn {
   color: var(--main-dark);
